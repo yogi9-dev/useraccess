@@ -1,0 +1,176 @@
+#hsst-portal {
+    /* Styles for the portal container */
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+nav {
+    /* Styles for the navigation bar */
+    background-color: #333;
+    color: white;
+    width: 20%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+nav ul {
+    /* Styles for the navigation list */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    /* Styles for the navigation items */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+nav li:hover {
+    /* Styles for the navigation items on hover */
+    background-color: #555;
+    cursor: pointer;
+}
+
+nav li img {
+    /* Styles for the navigation icons */
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+nav li span {
+    /* Styles for the navigation text */
+    font-weight: bold;
+}
+
+nav li ul {
+    /* Styles for the navigation sub-items */
+    display: none;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+nav li:hover ul {
+    /* Styles for the navigation sub-items on hover */
+    display: flex;
+}
+
+nav p {
+    /* Styles for the version number */
+    text-align: center;
+    margin-top: 20px;
+}
+
+main {
+    /* Styles for the main content area */
+    background-color: #f0f0f0;
+    width: 100%;
+    padding: 20px;
+}
+
+#manage-users {
+    /* Styles for the manage users section */
+    max-width: 900px;
+    margin-top: 50px ;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#create-new-user {
+    /* Styles for the create new user form */
+    padding: 20px;
+}
+
+#create-new-user label,
+#create-new-user input,
+#create-new-user select,
+#create-new-user button {
+    /* Styles for the form elements */
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#create-new-user input {
+    width : 2500px
+}
+
+#create-new-user select {
+    width : 500px
+}
+
+#create-new-user input,
+#create-new-user select,
+#create-new-user button {
+    /* Styles for the form inputs, select, and button */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#create-new-user button {
+    /* Styles for the form button */
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+
+#create-new-user button:hover {
+    /* Styles for the form button on hover */
+    background-color: darkorange;
+    cursor: pointer;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+    text-align: center;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+    #hsst-portal {
+        /* Make the portal container a column */
+        flex-direction: column;
+    }
+
+    nav {
+        /* Make the navigation bar a horizontal row */
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+    }
+
+    nav ul {
+        /* Make the navigation list a horizontal row */
+        display: flex;
+    }
+
+    nav li {
+        /* Make the navigation items a vertical column */
+        flex-direction: column;
+        border-right: 1px solid #444;
+    }
+
+    nav li ul {
+        /* Make the navigation sub-items a horizontal row */
+        flex-direction: row;
+        padding-left: 0;
+    }
+
+    main {
+        /* Make the main content area full width */
+        width: 100%;
+    }
+}

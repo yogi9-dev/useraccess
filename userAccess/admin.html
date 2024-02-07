@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HSST Portal</title>
+    <!-- Link the CSS file to the HTML file -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="hsst-portal">
+        <nav>
+            <ul>
+                <li>
+                    <img src="home.png" alt="home">
+                    <span>Overview</span>
+                </li>
+                <li>
+                    <img src="icon.png" alt="icon">
+                    <span>Enrollments</span>
+                    <ul>
+                        <li>All Students</li>
+                        <li>Advertising</li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="icon.png" alt="icon">
+                    <span>Exams Listing</span>
+                    <ul>
+                        <li>All Exams</li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="icon.png" alt="icon">
+                    <span>User Access</span>
+                    <ul>
+                        <li>Interviews</li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="icon.png" alt="icon">
+                    <span>Admin</span>
+                    <ul>
+                        <li>Settings</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Version 1.0.1</p>
+        </nav>
+        <main>
+            <h2>Manage Users Section</h2>
+            <section id="manage-users">
+                <h2 class="heading">Create New User</h2>
+                <form id="create-new-user">
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Name/Organization</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <div class="form-group">
+                         <label for ="confirm-password">Confirm Password</label>
+                        <input type ="password"id ="confirm-password"name ="confirm-password"required>
+                    </div>
+
+                    <div class="form-group">
+                         <label for="role">Role</label>
+                        <select id="role" name="role">
+                            <option value="hr-admin">HR - Admin</option>
+                            <!-- Other options -->
+                        </select>
+                        <button type="submit">Create User</button>
+                    </div>
+
+                </form>
+            </section>
+        </main>
+    </div> 
+</body>
+</html>
